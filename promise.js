@@ -86,6 +86,21 @@ console.log(1);
 foo();
 console.log(3);
 bar();
-console.log(5);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
