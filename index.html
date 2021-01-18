@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>22</h3>
+    </div>
+    <div>
+        <h3>33</h3>
+    </div>
+    <div>
+        <h3 class="one">44</h3>
+    </div>
+    <div>
+        <h3 class="one two">55</h3>
+    </div>
+    <div>
+        <h3>66</h3>
+    </div>
+    <script>
+        let a = document.getElementsByClassName('one')
+        console.log(a);
+        console.log(document.querySelector('body').children);
+        document.querySelector('.two').addEventListener('click', (e) => {
+            e.target.classList.remove('one')
+            console.log(a);
+        })
+    </script>
+    <!-- <script>
+        let observe = new MutationObserver((e) => console.log(e, 111111111))
+        observe.observe(document.body, { attributes: true })
+        document.body.setAttribute('class', 'one')
+        document.body.setAttribute('class', 'two')
+        document.body.setAttribute('class', 'three')
+    </script> -->
+</body>
+
+</html>
