@@ -1,11 +1,11 @@
 
 
-// async function add() {
-//     let a = await new Promise((resolve, reject) => {
-//         resolve(3)
-//     })
-//     console.log(a);
-// }
+async function add() {
+    let a = await new Promise((resolve, reject) => {
+        resolve(3)
+    })
+    console.log(a);
+}
 
 // // add()
 

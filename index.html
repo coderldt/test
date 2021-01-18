@@ -17,6 +17,9 @@
     <div>
         <h3 class="one">44</h3>
     </div>
+    <script>
+        console.log(document.readyState);
+    </script>
     <div>
         <h3 class="one two">55</h3>
     </div>
@@ -39,6 +42,12 @@
         document.body.setAttribute('class', 'two')
         document.body.setAttribute('class', 'three')
     </script> -->
+
+    <script>
+        window.onload = function () {
+            console.log(document.readyState);
+        }
+    </script>
 </body>
 
 </html>
